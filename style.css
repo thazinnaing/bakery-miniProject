@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: antiquewhite;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(225, 225, 173);
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.navigationBar{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 10%;
+    background-color: beige;
+
+}
+.leftBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo p{    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: rgb(187,187,187);
+}
+.middleBar{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rightmostBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+
+}
+.bakery a{
+    text-decoration: none;
+    color: black;
+}
+.bakery a:hover{
+    color: red;
+}
+.mainDiv{
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+.mainSideDiv{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: lightcyan;
+
+}
+.bakeryLogo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/3256687/images/3576175.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.mainTitle{
+    background-color: bisque;
+    color: white;
+    font-size: 50px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+}
+.mainText{
+    display: flex;
+    align-items: center;
+    background-color: bisque;
+}
+.mainText p{
+    color: white;
+    padding-left: 30px;
+    text-align: center;
+    font-size: 17px;
+}
+.mainText2{
+    display: flex;
+    align-items: center;
+    background-color: bisque;
+    height: 30px;
+}
+.mainText2 p{
+    color: white;
+    font-size: 20px;
+
+}
+.buttonDiv{
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+}
+.mainButton{
+    width: 200px;
+    height: 60px;
+    border-radius: 8px;
+    border: 3px solid white;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.mainImage{
+    width: 100%;
+    height: 600px;
+    background-image: url('https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/9ccfd8184e705bad974787e7/ghgh-min.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+
+
+
+
+@media screen and (max-width: 1024px){
+    .middleBar{
+        display: none;
+    }
+}
