@@ -23,8 +23,11 @@ body{
     padding-right: 100px;
     height: 10%;
     background-color: beige;
-
-}
+    top: 0;
+    position: sticky;
+    opacity: 0.8;
+    
+    }
 .leftBar{
     display: flex;
     justify-content: center;
@@ -61,19 +64,27 @@ body{
     display: flex;
     flex-direction: column;
 }
+.mainDiv2{
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    flex-direction: row;
+}
 .mainSideDiv{
+    padding-top: 50px;
     width: 100%;
     height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: lightcyan;
+    background-color: black;
+    
 
 }
 .bakeryLogo{
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/3256687/images/3576175.png");
     background-repeat: no-repeat;
@@ -87,20 +98,21 @@ body{
     display: flex;
     align-items: center;
 }
-.mainText{
+.text{
     display: flex;
     align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+.mainText{
     background-color: bisque;
 }
 .mainText p{
     color: white;
     padding-left: 30px;
-    text-align: center;
     font-size: 17px;
 }
 .mainText2{
-    display: flex;
-    align-items: center;
     background-color: bisque;
     height: 30px;
 }
@@ -110,7 +122,6 @@ body{
 
 }
 .buttonDiv{
-    background-color: bisque;
     display: flex;
     align-items: center;
 }
@@ -125,6 +136,7 @@ body{
     align-items: center;
     justify-content: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    word-spacing: 7px;
 }
 .mainImage{
     width: 100%;
@@ -134,13 +146,215 @@ body{
     background-size: 100% 100%;
 
 }
+.menuDiv{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 1500px;
+    background-color: rgb(158, 105, 25);
+}
 
+div p{
+    text-align: center;
+}
+.menuContent{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 500px;
+    background-color: lightblue;
+    padding-left: 100px;
+    padding-right: 100px;
 
+}
+.menuContent2{
+    background-color: lightcoral;
+}
+.menuTitle{
+    height: 50px;
+    background-color: antiquewhite;
 
+}
+.menuTitle p{
+    font-size: 50px;
+}
+.menuText{
+    background-color: bisque;
+    height: 70px;
+}
+.bgImage1{
+    background-image: url("//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/114eb3a7d170559dbf141d3b/r.jpg");
+}
+.bgImage2{
+    background-image: url("//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/0cd587018da1567ca82ec0a8/rr.jpg");
+}
+.bgImage3{
+    background-image: url("//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/fa992363623553128956b054/hh.jpg");
+}
+.bgImage4{
+    background-image: url("//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/1790791acc975a71ba003ca1/hg.jpg");
+}
+.bgImage5{
+    background-image: url("//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/c05083dfe0235ffaa9a5cfbf/jhjhjh.jpg");
+}
+.bgImage6{
+    background-image: url("//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/c1a914846ece539fab7e5b32/j.jpg");
+}
+.menuText p{
+    font-size: 20px;
+    
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.menu{
+    padding-top: 50px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.bgImage{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.text1{
+    height: 30px;
+}
+.text1 p{
+    font-size: 25px;
+}
+.text2{
+    height: 20px;
+}
+.text2 p{
+    font-size: 15px;
+}
+.price{
+    height: 35px;
+}
+.price p{
+    font-size: 30px;
+    color: grey;
+}
+.text3{
+    font-size: 20px
+}
+.variousBreadDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: black;
+    height: 1100px;
+    width: 100%;
+    padding-top: 70px;
+}
+.breadBar{
+    display: flex;
+    gap: 20px;
+    height: 400px;
+    margin: 0 auto;
+}
+.breadTitle{
+    height: 35px;
+}
+.breadTitle p{
+    font-size: 35px;
+}
+.bread{
+    height: 100%;
+    width: 250px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.breadImage{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.breadImage1{
+    background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/fggggg.jpg");
+}
+.breadImage2{
+    background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/yyyy.jpg");
+}
+.breadImage3{
+    background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/f5f4b03a-6b27-3595-ba4e-7b894cc961a3.jpg");
+}
+.breadImage4{
+    background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/444.jpg");
+}
+.breadImage5{
+    background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/c91fa21f-6a02-001e-d59f-2125c9c711bd.jpg");
+}
+.breadImage6{
+    background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/96a8f2c7-47a4-66cb-fec2-68902bf475cf.jpg");
+}
+.breadImage7{
+    background-image:url("https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/3ec2a0c1-031e-107f-1950-2cfd3f6314ce.jpg");
+}
+.breadImage8{
+    background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/96a8f2c7-47a4-66cb-fec2-68902bf475cf.jpg");
+}
+.more a{
+    color: black;
+}
 
 
 @media screen and (max-width: 1024px){
     .middleBar{
         display: none;
     }
+    .mainDiv2{
+        display: none;
+    }
+    .mainDiv{
+        display: flex;
+    }
+}
+@media screen and (min-width: 1024px){
+    .middleBar{
+        display: flex;
+    }
+    .rightmostBar{
+        display: none;
+    }
+    .mainDiv{
+        display: none;
+    }
+    .mainDiv2{
+        display: flex;
+        height: 680px;
+    }
+    .mainSideDiv{
+        width: 100%;
+        height: 680px;
+        padding-bottom: 80px;
+        padding-top: 80px;
+        padding-right: 350px;
+        padding-left: 50px;
+    }
+    .mainImage{
+        width: 100%;
+        height: 680px;
+    }
+    .mainButton{
+        width: 250px;
+        height: 70px;
+        font-size: 17px;
+    }
+    
+    
+
 }
