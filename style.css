@@ -14,7 +14,7 @@ body{
     left: 0;
     
 }
-/* url('https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/7498296e4db8581c94ab1c35/uyy.jpg') */
+
 .navigationBar{
     display: flex;
     justify-content: space-between;
@@ -229,10 +229,10 @@ div p{
 .variousBreadDiv{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 50px;
     background-color: black;
     width: 100%;
-    padding-top: 30px;
+    padding-top: 50px;
 }
 .breadBar{
     display: flex;
@@ -241,6 +241,7 @@ div p{
     flex-wrap: wrap;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 70px;
 }
 .breadTitle{
     height: 35px;
@@ -311,6 +312,74 @@ div p{
     padding-left: 10px;
     padding-right: 10px;
 }
+.sweetsDiv{
+    height: 850px;
+    background-image: url('https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/7498296e4db8581c94ab1c35/uyy.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sweetsTitle{
+    height: 50px;
+    color: white;
+    margin-bottom: 50px;
+}
+.sweetsTitle p{
+    font-size: 50px;
+}
+.sweetContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    color: black;
+    font-size: 20px;
+    line-height: 70px;
+}
+.listIcon{
+    display: inline-block;
+    width: 10px;
+    height: 1px;
+    background-color: black;
+}
+li{
+    line-height: 30px;
+}
+.sweetContent{
+    background-color: white;
+    width: 80%;
+    display: flex;
+    border-radius: 10px;
+}
+.ulDiv{
+    display: flex;
+    align-items: center;
+    
+}
+.cookiesDiv{
+    height: 230px;
+}
+.ulDiv1{
+    height: 200px;
+}
+.sconesDiv{
+    height: 190px;
+}
+.ulDiv2{
+    height: 170px;
+}
+.otherDiv{
+    height: 210px;
+}
+.ulDiv3{
+    height: 180px;
+}
+
 @media screen and (max-width: 460px){
     .middleBar{
         display: none;
@@ -370,6 +439,10 @@ div p{
     .menuTitle p {
         font-size: 50px;
     }
+    .sweetContent{
+        width: 400px;
+    }
+    
 }
 @media screen and (min-width: 840px){
     .middleBar{
@@ -388,6 +461,18 @@ div p{
     .breadBar{
         padding-left: 50px;
         padding-right: 50px;
+    }
+    .sweetContainer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .sweetContent{
+        width: 300px;
+        height: 300px;
     }  
 
 }
@@ -434,6 +519,13 @@ div p{
     .breadBar{
         padding-left: 180px;
         padding-right: 180px;
+    }
+    .sweetsDiv{
+        height: 600px;
+    }
+    .sweetContainer{
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 @media screen and (min-width: 1280px){
