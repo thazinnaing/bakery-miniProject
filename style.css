@@ -14,14 +14,14 @@ body{
     left: 0;
     
 }
+/* url('https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/7498296e4db8581c94ab1c35/uyy.jpg') */
 .navigationBar{
     display: flex;
     justify-content: space-between;
     padding-left: 30px;
     padding-right: 30px;
     height: 10%;
-    background-color: lightyellow;
-    
+    background-color: white;
     }
 .leftBar{
     display: flex;
@@ -76,10 +76,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
-    
-    
-
+    align-items: center;  
 }
 .bakeryLogo{
     width: 130px;
@@ -101,6 +98,12 @@ body{
     align-items: center;
     justify-content: center;
 }
+div p{
+    text-align: center;
+}
+.mainText{
+    height: 70px;
+}
 .mainText p{
     color: white;
     padding-left: 10px;
@@ -113,6 +116,7 @@ body{
 .mainText2 p{
     color: white;
     font-size: 18px;
+    font-style: italic;
 
 }
 .buttonDiv{
@@ -141,43 +145,46 @@ body{
 
 }
 .menuDiv{
-    padding-top: 70px;
-    padding-bottom: 70px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    padding-top: 40px;
     align-items: center;
-    height: 1500px;
-    background-color: rgb(158, 105, 25);
-}
-
-div p{
-    text-align: center;
+    gap: 20px;
 }
 .menuContent{
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    height: 500px;
-    background-color: lightblue;
-    padding-left: 100px;
-    padding-right: 100px;
-
-}
-.menuContent2{
-    background-color: lightcoral;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
 }
 .menuTitle{
-    height: 50px;
-    background-color: antiquewhite;
-
+    height: 40px;
 }
 .menuTitle p{
-    font-size: 50px;
+    font-size: 40px;
 }
-.menuText{
-    background-color: bisque;
-    height: 70px;
+.menuText p{
+    font-style: italic;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.menu{
+    padding-top: 20px;
+    width: 300px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.bgImage{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 .bgImage1{
     background-image: url("//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/114eb3a7d170559dbf141d3b/r.jpg");
@@ -197,27 +204,6 @@ div p{
 .bgImage6{
     background-image: url("//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/c1a914846ece539fab7e5b32/j.jpg");
 }
-.menuText p{
-    font-size: 20px;
-    
-    padding-left: 150px;
-    padding-right: 150px;
-}
-.menu{
-    padding-top: 50px;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.bgImage{
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
 .text1{
     height: 30px;
 }
@@ -226,6 +212,8 @@ div p{
 }
 .text2{
     height: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .text2 p{
     font-size: 15px;
@@ -237,37 +225,37 @@ div p{
     font-size: 30px;
     color: grey;
 }
-.text3{
-    font-size: 20px
-}
+
 .variousBreadDiv{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    gap: 30px;
     background-color: black;
-    height: 1100px;
     width: 100%;
-    padding-top: 70px;
+    padding-top: 30px;
 }
 .breadBar{
     display: flex;
-    gap: 20px;
-    height: 400px;
-    margin: 0 auto;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .breadTitle{
     height: 35px;
 }
 .breadTitle p{
-    font-size: 35px;
+    font-size: 29px;
+    color: white;
 }
 .bread{
-    height: 100%;
-    width: 250px;
+    height: 350px;
+    width: 300px;
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 .breadImage{
@@ -301,8 +289,27 @@ div p{
 .breadImage8{
     background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/96a8f2c7-47a4-66cb-fec2-68902bf475cf.jpg");
 }
+.breadName{
+    height: 20px;
+}
+.breadName p{
+    font-weight: bold;
+    font-size: 22px;
+}
 .more a{
-    color: black;
+    color: rgb(80, 30, 80);
+}
+.more a:hover{
+    color: red;
+}
+
+.breadText{
+    height: 45px;
+}
+.breadText p{
+    font-style: italic;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 @media screen and (max-width: 460px){
     .middleBar{
@@ -328,6 +335,9 @@ div p{
     .mainText{
         height: 40px;
     }
+    .breadTitle p{
+        font-size: 35px;
+    }
     
 }
 
@@ -351,6 +361,15 @@ div p{
     .mainImage{
         height: 620px;
     }
+    .menuText p{
+        font-size: 20px;
+    }
+    .mainTitle p{
+        font-size: 40px;
+    }
+    .menuTitle p {
+        font-size: 50px;
+    }
 }
 @media screen and (min-width: 840px){
     .middleBar{
@@ -366,6 +385,10 @@ div p{
         height: 650px;
         width: 95%;
     }
+    .breadBar{
+        padding-left: 50px;
+        padding-right: 50px;
+    }  
 
 }
 @media screen and (min-width: 1024px){
@@ -408,6 +431,10 @@ div p{
         height: 70px;
         font-size: 17px;
     }
+    .breadBar{
+        padding-left: 180px;
+        padding-right: 180px;
+    }
 }
 @media screen and (min-width: 1280px){
     .middleBar{
@@ -429,4 +456,32 @@ div p{
     .mainSideDiv{
         width: 50%;
     }
+    .menuContent{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .breadBar{
+        padding-left: 250px;
+        padding-right: 250px;
+    }
 }
+@media screen and (min-width: 1350px){
+    .middleBar{
+        display: flex;
+    }
+    .rightmostBar{
+        display: none;
+    }
+    .mainDiv{
+        display: none;
+    }
+    .mainDiv2{
+        display: flex;
+    }
+    .breadBar{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
