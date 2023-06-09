@@ -359,7 +359,6 @@ li{
 .ulDiv{
     display: flex;
     align-items: center;
-    
 }
 .cookiesDiv{
     height: 230px;
@@ -378,6 +377,69 @@ li{
 }
 .ulDiv3{
     height: 180px;
+}
+.contactContainer{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(167,159,148);
+}
+.contactDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+.contactImage{
+    width: 100%;
+    height: 350px;
+    background-image: url('https://assets.nicepagecdn.com/d2cc3eaa/3256687/images/65.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.contactTextContainer{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contactTitle{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.contactTitle p{
+    font-size: 30px;
+    text-align: left;
+}
+.contactText{
+    padding-left: 15px;
+    padding-right: 10px;
+}
+.contactText p{
+    text-align: left;
+    font-style: italic;
+}
+.phoneDiv{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding-left: 15px;
+    align-items: center;
+}
+.phoneIcon{
+    font-size: 20px;
+    color: rgb(167,159,148);
+}
+.phoneNumber{
+    font-size: 20px;
 }
 
 @media screen and (max-width: 460px){
@@ -407,6 +469,29 @@ li{
     .breadTitle p{
         font-size: 35px;
     }
+    .contactDiv{
+        width: 90%;
+        height: 90%;
+    }
+    .contactContainer{
+        height: 800px;
+    }
+    .contactImage{
+        height: 500px;
+    }
+    .contactTitle p{
+        font-size: 35px;
+    }
+    .contactText p{
+        font-size: 20px;
+    }
+    .phoneIcon{
+        font-size: 25px;
+    }
+    .phoneNumber{
+        font-size: 25px;
+    }
+    
     
 }
 
@@ -442,6 +527,12 @@ li{
     .sweetContent{
         width: 400px;
     }
+    .contactContainer{
+        height: 900px;
+    }
+    .contactImage{
+        height: 600px;
+    }
     
 }
 @media screen and (min-width: 840px){
@@ -474,6 +565,36 @@ li{
         width: 300px;
         height: 300px;
     }  
+    .contactContainer{
+        width: 100%;
+        height: 550px;
+    }
+    .contactDiv{
+        flex-direction: row;
+        height: 460px;
+        width: 90%;
+        position: relative;
+    }
+    .contactImage{
+        height: 100%;
+        width: 40%;
+    }
+    .contactTextContainer{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px; 
+        width: 60%;
+    }
+    .contactTitle{
+        height: 100px;
+    }
+    .contactTitle p{
+        font-size: 50px;
+    }
+    .contactText p{
+        font-size: 25px;
+    }
 
 }
 @media screen and (min-width: 1024px){
@@ -555,6 +676,9 @@ li{
     .breadBar{
         padding-left: 250px;
         padding-right: 250px;
+    }
+    .contactDiv{
+        width: 80%;
     }
 }
 @media screen and (min-width: 1350px){
