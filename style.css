@@ -378,13 +378,17 @@ li{
 .ulDiv3{
     height: 180px;
 }
+.twoBackgroundDiv{
+    height: 1000px;
+    width: 100%;
+    background-color: rgb(167,159,148);
+}
 .contactContainer{
     width: 100%;
     height: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(167,159,148);
 }
 .contactDiv{
     width: 100%;
@@ -441,6 +445,65 @@ li{
 .phoneNumber{
     font-size: 20px;
 }
+.backgroundDiv{
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+.sampleBreadContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 100px;
+}
+.sampleBread{
+    width: 100%;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sampleImage{
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.forSample{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.sampleTitle{
+    height: 35px;
+}
+.sampleTitle p{
+    text-align: left;
+    font-size: 35px;
+}
+.sampleText{
+    height: 45px;
+}
+.sampleText p{
+    font-size: 15px;
+    text-align: left;
+    font-style: italic;
+}
+
+.sampleImage1{
+    background-image: url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/8baae157ffbe56548790d776/yty.jpg");
+}
+.sampleImage2{
+    background-image: url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/8d481fe712f85027870c837e/rtrtrt.jpg");
+}
+.sampleImage3{
+    background-image: url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/8d481fe712f85027870c837e/rtrtrt.jpg");
+}
+
+
 
 @media screen and (max-width: 460px){
     .middleBar{
@@ -449,6 +512,7 @@ li{
     .mainDiv2{
         display: none;
     }
+    
 }
 @media screen and (min-width: 460px){
     .middleBar{
@@ -470,7 +534,7 @@ li{
         font-size: 35px;
     }
     .contactDiv{
-        width: 90%;
+        width: 80%;
         height: 90%;
     }
     .contactContainer{
@@ -480,7 +544,7 @@ li{
         height: 500px;
     }
     .contactTitle p{
-        font-size: 35px;
+        font-size: 28px;
     }
     .contactText p{
         font-size: 20px;
@@ -491,7 +555,25 @@ li{
     .phoneNumber{
         font-size: 25px;
     }
-    
+    .sampleBread{
+        width: 80%;
+    }
+    .twoBackgroundDiv{
+        height: 1150px;
+    }
+    .sampleBread{
+        height: 540px;
+    }
+    .sampleImage{
+        height: 400px;
+    }
+    .sampleImage1{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .sampleText p{
+        font-size: 18px;
+    }
     
 }
 
@@ -532,6 +614,12 @@ li{
     }
     .contactImage{
         height: 600px;
+    }
+    .contactTitle p{
+        font-size: 35px;
+    }
+    .twoBackgroundDiv{
+        height: 1250px;
     }
     
 }
@@ -595,6 +683,35 @@ li{
     .contactText p{
         font-size: 25px;
     }
+    .twoBackgroundDiv{
+        height: 900px;
+    }
+    .sampleBreadContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .sampleBread{
+        width: 350px;
+        height: 450px;
+    }
+    .sampleImage{
+        width: 100%;
+        height: 300px;
+    }
+    .sampleImage1, .sampleImage2{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .sampleText{
+        height: 70px;
+    }
 
 }
 @media screen and (min-width: 1024px){
@@ -648,6 +765,14 @@ li{
         padding-left: 15px;
         padding-right: 15px;
     }
+    .sampleBreadContainer{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .sampleImage1, .sampleImage2, .sampleImage3{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
 }
 @media screen and (min-width: 1280px){
     .middleBar{
@@ -677,8 +802,13 @@ li{
         padding-left: 250px;
         padding-right: 250px;
     }
-    .contactDiv{
-        width: 80%;
+    .sampleBread{
+        width: 450px;
+        height: 500px;
+    }
+    .sampleImage{
+        width: 100%;
+        height: 350px;
     }
 }
 @media screen and (min-width: 1350px){
