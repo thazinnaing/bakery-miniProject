@@ -31,8 +31,10 @@ body{
 .leftBar p{    
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 35px;
-    color: rgb(197,187,197);
+    color:rgb(136, 123, 136);
+
 }
+
 .middleBar{
     display: flex;
     gap: 15px;
@@ -60,14 +62,6 @@ body{
     display: flex;
     flex-direction: column;
     background-color: black;
-}
-.mainDiv2{
-    width: 100%;
-    height: 700px;
-    display: flex;
-    flex-direction: row;
-    background-color: black;
-    position: relative;
 }
 .mainSideDiv{
     padding-top: 30px;
@@ -135,11 +129,18 @@ div p{
     justify-content: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     word-spacing: 7px;
+    
 }
-.mainButton:hover{
-    background-color: rgb(167,159,148);
-    color: black;
+@keyframes bordercolor{
+    50%{border-color: rgb(234, 234, 40);}
+    100%{border-color: white;}
+}
 
+.mainButton:hover{
+    animation-name: bordercolor;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
 }
 .mainImage{
     width: 100%;
@@ -190,6 +191,10 @@ div p{
     border-radius: 50%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+.bgImage:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
 }
 .bgImage1{
     background-image: url("//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/114eb3a7d170559dbf141d3b/r.jpg");
@@ -247,6 +252,9 @@ div p{
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 70px;
+}
+.bread:hover{
+    transform: scale(1.05);
 }
 .breadTitle{
     height: 35px;
@@ -463,7 +471,7 @@ li{
 .bottomBackground{
     width: 100%;
     height: 1080px;
-    background-color: aquamarine;
+    background-color: white;
 }
 .sampleBreadContainer{
     width: 100%;
@@ -480,6 +488,9 @@ li{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.sampleBread:hover{
+    transform: scale(1.02)
 }
 .sampleImage{
     width: 100%;
@@ -515,7 +526,7 @@ li{
     background-image: url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/8d481fe712f85027870c837e/rtrtrt.jpg");
 }
 .sampleImage3{
-    background-image: url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/8d481fe712f85027870c837e/rtrtrt.jpg");
+    background-image: url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/9765013a9a185d16adf414dd/b1182e8f-cee4-f571-00ff-b553b7f96898.jpg");
 }
 .signupAddressContainer{
     width: 100%;
@@ -538,16 +549,9 @@ li{
     .middleBar{
         display: none;
     }
-    .mainDiv2{
-        display: none;
-    }
-    
 }
 @media screen and (min-width: 460px){
     .middleBar{
-        display: none;
-    }
-    .mainDiv2{
         display: none;
     }
     .mainDiv{
@@ -618,9 +622,6 @@ li{
     .middleBar{
         display: none;
     }
-    .mainDiv2{
-        display: none;
-    }
     .navigationBar{
         padding-left: 50px;
         padding-right: 50px;
@@ -660,9 +661,6 @@ li{
 }
 @media screen and (min-width: 840px){
     .middleBar{
-        display: none;
-    }
-    .mainDiv2{
         display: none;
     }
     .mainDiv{
@@ -733,6 +731,9 @@ li{
         width: 350px;
         height: 450px;
     }
+    .sampleBread3{
+        justify-self: flex-start;
+    }
     .sampleImage{
         width: 100%;
         height: 300px;
@@ -757,10 +758,10 @@ li{
         display: none;
     }
     .mainDiv{
-        display: none;
-    }
-    .mainDiv2{
         display: flex;
+        flex-direction: row;
+        height: 700px;
+        position: relative;
     }
     .bakery a{
         font-size: 20px;
@@ -821,12 +822,6 @@ li{
     .rightmostBar{
         display: none;
     }
-    .mainDiv{
-        display: none;
-    }
-    .mainDiv2{
-        display: flex;
-    }
     .mainImage{
         height: 100%;
         width: 50%;
@@ -860,12 +855,6 @@ li{
     }
     .rightmostBar{
         display: none;
-    }
-    .mainDiv{
-        display: none;
-    }
-    .mainDiv2{
-        display: flex;
     }
     .breadBar{
         padding-left: 10px;
