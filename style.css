@@ -14,7 +14,6 @@ body{
     left: 0;
     
 }
-
 .navigationBar{
     display: flex;
     justify-content: space-between;
@@ -32,12 +31,10 @@ body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 35px;
     color:rgb(136, 123, 136);
-
 }
-
 .middleBar{
     display: flex;
-    gap: 15px;
+    gap: 25px;
     align-items: center;
 }
 .rightmostBar{
@@ -45,7 +42,6 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 25px;
-
 }
 .bakery a{
     font-weight: bold;
@@ -392,16 +388,13 @@ li{
 .ulDiv3{
     height: 180px;
 }
-.twoBackgroundDiv{
-    width: 100%;
-    background-color: white;
-}
 .contactContainer{
     width: 100%;
     height: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(167,159,148);
 }
 .contactDiv{
     width: 100%;
@@ -461,6 +454,7 @@ li{
 .backgroundDiv{
     display: flex;
     flex-direction: column;
+    background-color: white;
 
 }
 .topBackground{
@@ -490,7 +484,8 @@ li{
     justify-content: space-between;
 }
 .sampleBread:hover{
-    transform: scale(1.02)
+    transform: scale(1.02);
+    opacity: 0.8;
 }
 .sampleImage{
     width: 100%;
@@ -531,17 +526,174 @@ li{
 .signupAddressContainer{
     width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signupAddressDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.forSignupAddress{
+    width: 100%;
+    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
-    position: relative;
+    align-items: flex-start;
+    padding: 5px 15px;
 }
 .signupDiv{
-    width: 80%;
+    height: 350px;
+}
+.forText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.forText p{
+    text-align: left;
+}
+.signupTitle{
+    height: 20px;
+}
+.signupTitle p{
+    font-size: 23px;
+}
+.signupText p{
+    font-size: 18px;
+}
+.formContainer{
+    width: 100%;
+}
+.formDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.formDiv input{
+    height: 40px;
+    padding: 5px 12px;
+    font-size: 18px;
+    outline-color: rgb(167,159,148);
+    border-style: none;
+}
+.email{
+    background-color: rgb(242,242,242);
+}
+.submit{
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    outline-style: none;
+    border: none;
+    background-color: rgb(167,159,148);
+}
+.submit:hover{
+    background-color: rgb(42, 32, 32);
+}
+.iconDiv{
+    display: flex;
+    gap: 17px;
+}
+.icon i{
+    font-size: 25px;
+}
+.addressContainer{
+    width: 100%;
+    height: 300px;
+}
+.addressTitle{
+    height: 30px;
+}
+.addressTitle p{
+    font-size: 30px;
+}
+.addressDiv{
+    height: 90px;
+}
+.forAddress{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
 }
+.timeDiv{
+    height: 55px;
+}
+.address{
+    height: 20px;
+}
+.address p{
+    font-size: 20px;
+}
+.lastContainer{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lastDiv{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logoDiv{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/3256687/images/3576175.png");
+    background-repeat: no-repeat;
+    background-size: contain;    
+}
+.headlineContainer{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.headlineDiv{
+    width: 100%;;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+.headDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 20px;
+}
+.headTitle{
+    height: 20px;
+}
+.headTitle p{
+    font-size: 18px;
+    color: white;
+}
+.headText{
+    height: 15px;
+}
+.headText p{
+    font-size: 15px;
+    color: white;
+}
+.lastIcon{
+    color: white;
+}
+
+
+
 
 
 
@@ -582,6 +734,9 @@ li{
     .contactText p{
         font-size: 20px;
     }
+    .backgroundDiv{
+        background-color: rgb(167,159,148);
+    }
     .phoneIcon{
         font-size: 25px;
     }
@@ -615,7 +770,18 @@ li{
     .twoBackgroundDiv{
         background-color: rgb(167,159,148);
     }
-    
+    .formDiv{
+        width: 80%;
+    }
+    .signupTitle{
+        height: 30px;
+    }
+    .signupTitle p{
+        font-size: 30px;
+    }
+    .signupAddressDiv{
+        width: 80%;
+    }
 }
 
 @media screen and (min-width: 640px){
@@ -655,6 +821,20 @@ li{
     }
     .contactTitle p{
         font-size: 35px;
+    }
+    .signupDiv{
+        height: 300px;
+    }
+    .formDiv{
+        width: 100%;
+        display: grid;
+        grid-template: 35px / 56% 27%;
+    }
+    .signupText{
+        height: 40px;
+    }
+    .signupText p{
+        font-size: 20px;
     }
   
     
@@ -743,6 +923,23 @@ li{
     }
     .bottomBackground{
         height: 750px;
+    }
+    .signupAddressDiv{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+    }
+    .forSignupAddress{
+        height: 400px;
+    }
+    .formDiv{
+        width: 100%;
+        display: grid;
+        grid-template: 35px / 65% 27%;
+    }
+    .headlineContainer{
+        display: flex;
+        flex-direction: row;
     }
 
 }
