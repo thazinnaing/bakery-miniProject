@@ -123,7 +123,7 @@ div p{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Georgia, Times, 'Times New Roman', serif;
     word-spacing: 7px;
     
 }
@@ -189,8 +189,15 @@ div p{
     background-size: 100% 100%;
 }
 .bgImage:hover{
-    transform: scale(1.05);
     opacity: 0.9;
+    animation-name: hoverEffect;
+    animation-duration: 0.7s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+@keyframes hoverEffect{
+    0%{transform: scale(1);}
+    100%{transform: scale(1.05);}
 }
 .bgImage1{
     background-image: url("//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/114eb3a7d170559dbf141d3b/r.jpg");
@@ -222,6 +229,7 @@ div p{
     padding-right: 10px;
 }
 .text2 p{
+    font-style: italic;
     font-size: 15px;
 }
 .price{
@@ -249,9 +257,6 @@ div p{
     padding-right: 10px;
     padding-bottom: 70px;
 }
-.bread:hover{
-    transform: scale(1.05);
-}
 .breadTitle{
     height: 35px;
 }
@@ -268,6 +273,13 @@ div p{
     justify-content: space-evenly;
     align-items: center;
     border-radius: 10px;
+}
+.bread:hover{
+    opacity: 0.9;
+    animation-name: hoverEffect;
+    animation-duration: 0.7s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
 }
 .breadImage{
     width: 150px;
@@ -484,8 +496,11 @@ li{
     justify-content: space-between;
 }
 .sampleBread:hover{
-    transform: scale(1.02);
-    opacity: 0.8;
+    opacity: 0.9;
+    animation-name: hoverEffect;
+    animation-duration: 0.7s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
 }
 .sampleImage{
     width: 100%;
@@ -661,13 +676,13 @@ li{
     align-items: center;
     justify-content: space-between;
 }
-.headlineDiv{
+.headlineInnerContainer{
     width: 100%;;
     height: 50px;
     display: flex;
     justify-content: flex-start;
 }
-.headDiv{
+.headlineDiv{
     width: 100%;
     display: flex;
     flex-direction: column;
