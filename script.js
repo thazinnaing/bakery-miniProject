@@ -94,19 +94,39 @@ const bread=[
     }
 ]
 
+
+
+const sweets=[
+    {   
+        "id": 15,
+        "title": "Cookies",
+        "list": ["Biscotti", "Chocolate Chip", "Oatmeal Pecan", "Oat Ginger Bar", "Seasonal specials"],
+    },
+    {   
+        "id": 16,
+        "title": "Scones",
+        "list": ["Classic butter scone", "Fresh fruit butter milk scones", "Handmade scones"],
+    },
+    {   
+        "id": 17,
+        "title": "Other",
+        "list": ["Seasonal galletes", "Tarlets", "Banana Bread", "Cranberry Pecan Granola"],
+    }
+]
+
 const sampleBread=[
     {
-        "id": 15,
+        "id": 18,
         "name": "Breads",
         "description": "Sample text. Click to select the text box. Click again or double click to start editing the text."
     },
     {
-        "id": 16,
+        "id": 19,
         "name": "Cookies",
         "description": "Sample text. Click to select the text box. Click again or double click to start editing the text."
     },
     {
-        "id": 17,
+        "id": 20,
         "name": "Pastries",
         "description": "Sample text. Click to select the text box. Click again or double click to start editing the text."
     }
@@ -114,26 +134,28 @@ const sampleBread=[
 
 const headLine=[
     {
-        "id": 18,
+        "id": 21,
         "title": "Headline",
         "description": "Sample text.",
     },
    {
-        "id": 19,
+        "id": 22,
         "title": "Headline",
         "description": "Sample footer text",
    },
    {
-        "id": 20,
+        "id": 23,
         "title": "Headline",
         "description": "Sample footer text",
     },
     {
-        "id": 21,
+        "id": 24,
         "title": "Headline",
         "description": "Sample footer text",
     }
 ]
+
+
 
 menuBackground=["bgImage1", "bgImage2", "bgImage3", "bgImage4", "bgImage5", "bgImage6"];
 
@@ -145,7 +167,7 @@ sampleBackground=["sampleImage1", "sampleImage2", "sampleImage3"];
 
 const menuContent=document.getElementsByClassName("menuContent")[0];
 
-for(let i=0; i<6; i++){
+for(let i=0; i<menu.length; i++){
     const menuDiv=document.createElement("div");
     menuDiv.classList.add("menu");
 
@@ -172,14 +194,13 @@ for(let i=0; i<6; i++){
     pricePTag.innerHTML=menu[i].price;
     price.append(pricePTag);
 
-
     menuDiv.append(image, name, description, price);
     menuContent.append(menuDiv);
 }
 
 const breadBar=document.getElementsByClassName("breadBar")[0];
 
-for(let i=0; i< 8; i++){
+for(let i=0; i<bread.length; i++){
     const breadDiv=document.createElement("div");
     breadDiv.classList.add("bread")
 
@@ -198,7 +219,6 @@ for(let i=0; i< 8; i++){
     descriptionPTag.innerHTML=bread[i].description;
     description.append(descriptionPTag);
 
-    
     const moreDiv=document.createElement("div");
     moreDiv.classList.add("more", "text");
     const more=document.createElement("a");
@@ -212,10 +232,45 @@ for(let i=0; i< 8; i++){
 
 }
 
+const ulDiv1=document.getElementsByClassName("ulDiv")[0];
+const ulDiv2=document.getElementsByClassName("ulDiv")[1];
+const ulDiv3=document.getElementsByClassName("ulDiv")[2];
+
+const arr=["ulDiv1", "ulDiv2", "ulDiv3"]
+
+for(let i=0; i<sweets.length; i++){
+    const ulTag=document.createElement("ul");
+    const strongTag=document.createElement("strong");
+    strongTag.innerHTML=sweets[i].title;
+    ulTag.append(strongTag);
+
+    for(let j=0; j<sweets[i].list.length; j++){
+        const liTag=document.createElement("li");
+        const listIcon=document.createElement("div");
+        listIcon.classList.add("listIcon");
+        liTag.append(listIcon);
+        liTag.innerHTML=sweets[i].list[j];
+        ulTag.append(liTag);
+    }
+    if(i === 0){
+        ulDiv1.append(ulTag);
+    }
+    if(i === 1){
+        ulDiv2.append(ulTag);
+    }
+    if(i === 2){
+        ulDiv3.append(ulTag);
+    }
+
+}
+
+
+
+
 
 const sampleBreadContainer=document.getElementsByClassName("sampleBreadContainer")[0];
 
-for(let i=0; i< 3; i++){
+for(let i=0; i< sampleBread.length; i++){
     const sampleBreadDiv=document.createElement("div");
     sampleBreadDiv.classList.add("sampleBread");
 
@@ -240,13 +295,10 @@ for(let i=0; i< 3; i++){
     sampleBreadContainer.append(sampleBreadDiv);
 }
 
+
 const headlineContainer=document.getElementsByClassName("headlineContainer")[0];
-
-const headlineInnerContainer1=document.createElement("div");
-headlineInnerContainer1.classList.add("headlineInnerContainer");
-
-const headlineInnerContainer2=document.createElement("div");
-headlineInnerContainer2.classList.add("headlineInnerContainer");
+const headlineInnerContainer1=document.getElementsByClassName("headlineInnerContainer")[0];
+const headlineInnerContainer2=document.getElementsByClassName("headlineInnerContainer")[1];
 
 const forheadlineDiv=(i)=>{
     const headlineDiv=document.createElement("div");
@@ -269,18 +321,16 @@ const forheadlineDiv=(i)=>{
     
 }
 
-for(let i=0; i<2; i++){
-    
-    const headlineDiv=forheadlineDiv(i);
-    headlineInnerContainer1.append(headlineDiv);
-    
-}
+for(let i=0; i<headLine.length; i++){
+    if(i<headLine.length/2){
+        const headlineDiv=forheadlineDiv(i);
+        headlineInnerContainer1.append(headlineDiv);
 
-for(let i=2; i<4; i++){
-
-    const headlineDiv=forheadlineDiv(i);
-    headlineInnerContainer2.append(headlineDiv);
-
+    }
+    if(i>(headLine.length/2)-1){
+        const headlineDiv=forheadlineDiv(i);
+        headlineInnerContainer2.append(headlineDiv);
+    }
 }
 headlineContainer.append(headlineInnerContainer1, headlineInnerContainer2);
 
