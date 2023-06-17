@@ -565,7 +565,6 @@ li{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
 }
 .forText p{
     text-align: left;

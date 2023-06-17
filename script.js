@@ -116,7 +116,7 @@ const headLine=[
     {
         "id": 18,
         "title": "Headline",
-        "description": "Sample text. Click to select the Text Element.",
+        "description": "Sample text.",
     },
    {
         "id": 19,
@@ -238,29 +238,28 @@ for(let i=0; i< 3; i++){
 
     sampleBreadDiv.append(image, name, description);
     sampleBreadContainer.append(sampleBreadDiv);
-
 }
 
 const headlineContainer=document.getElementsByClassName("headlineContainer")[0];
 
 const headlineInnerContainer1=document.createElement("div");
-headlineInnerContainer1.classList.add("headlineInnerConatiner");
+headlineInnerContainer1.classList.add("headlineInnerContainer");
 
 const headlineInnerContainer2=document.createElement("div");
-headlineInnerContainer2.classList.add("headlineInnerConatiner");
+headlineInnerContainer2.classList.add("headlineInnerContainer");
 
 const forheadlineDiv=(i)=>{
     const headlineDiv=document.createElement("div");
     headlineDiv.classList.add("headlineDiv");
 
     const title=document.createElement("div");
-    title.classList.add("headTilte", "fotText")
+    title.classList.add("headTitle", "forText");
     const pTag=document.createElement("p");
     pTag.innerHTML=headLine[i].title;
     title.append(pTag);
 
     const description=document.createElement("div");
-    description.classList.add("headText", "forText")
+    description.classList.add("headText", "forText");
     const descriptionPTag=document.createElement("p");
     descriptionPTag.innerHTML=headLine[i].description;
     description.append(descriptionPTag);
