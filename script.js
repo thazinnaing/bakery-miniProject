@@ -4,6 +4,7 @@ const menu=[
         "name":"BAGUETTE",
         "description": "Small-batch sourdough baguette 1.",
         "price": "$41.5",
+        "image": "//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/114eb3a7d170559dbf141d3b/r.jpg",
         
     },
     {   
@@ -11,6 +12,7 @@ const menu=[
         "name":"FARMING BREAD",
         "description": "Small-batch sourdough baguette 2.",
         "price": "$21.5",
+        "image": "//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/0cd587018da1567ca82ec0a8/rr.jpg",
         
     },
     {   
@@ -18,6 +20,7 @@ const menu=[
         "name":"MIXED GRAIN",
         "description": "Small-batch sourdough baguette 3.",
         "price": "$11.5",
+        "image": "//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/fa992363623553128956b054/hh.jpg",
     
     },
     {   
@@ -25,6 +28,7 @@ const menu=[
         "name":"MILK BREAD",
         "description": "Small-batch sourdough baguette 4.",
         "price": "$51.5",
+        "image": "//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/1790791acc975a71ba003ca1/hg.jpg",
         
     },
     {   
@@ -32,6 +36,7 @@ const menu=[
         "name":"BROWN BREAD",
         "description": "Small-batch sourdough baguette 5.",
         "price": "$12.5",
+        "image": "//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/c05083dfe0235ffaa9a5cfbf/jhjhjh.jpg",
     
     },
     {   
@@ -39,6 +44,7 @@ const menu=[
         "name":"CHEESE BREAD",
         "description": "Small-batch sourdough baguette 6.",
         "price": "$10.5",
+        "image": "//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/c1a914846ece539fab7e5b32/j.jpg",
     
     }
 ]
@@ -48,48 +54,57 @@ const bread=[
         "id": 7,
         "name": "CROISSANT",
         "description": "some text. Click here to see some bakery logo. And this is some example text.",
+        "image": "https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/fggggg.jpg",
+        
 
     },
     {
         "id": 8,
         "name": "BROWNIES",
         "description": "some text. Click here to see some bakery logo. And this is some example text.",
+        "image": "https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/yyyy.jpg",
 
     },
     {
         "id": 9,
         "name": "CINNAMON BUN",
         "description": "some text. Click here to see some bakery logo. And this is some example text.",
+        "image": "https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/f5f4b03a-6b27-3595-ba4e-7b894cc961a3.jpg",
 
     },
     {
         "id": 10,
         "name": "TURKISH BAGELS",
         "description": "some text. Click here to see some bakery logo. And this is some example text.",
+        "image": "https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/444.jpg",
 
     },
     {
         "id": 11,
         "name": "DOUGHNUTS",
         "description": "some text. Click here to see some bakery logo. And this is some example text.",
+        "image": "https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/c91fa21f-6a02-001e-d59f-2125c9c711bd.jpg",
 
     },
     {
         "id": 12,
         "name": "TARTS",
         "description": "some text. Click here to see some bakery logo. And this is some example text.",
+        "image": "https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/96a8f2c7-47a4-66cb-fec2-68902bf475cf.jpg",
 
     },
     {
         "id": 13,
         "name": "SHORTBREAD",
         "description": "some text. Click here to see some bakery logo. And this is some example text.",
+        "image": "https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/3ec2a0c1-031e-107f-1950-2cfd3f6314ce.jpg",
 
     },
     {
         "id": 14,
         "name": "COOKIES",
         "description": "some text. Click here to see some bakery logo. And this is some example text.",
+        "image": "https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/96a8f2c7-47a4-66cb-fec2-68902bf475cf.jpg",
 
     }
 ]
@@ -118,17 +133,20 @@ const sampleBread=[
     {
         "id": 18,
         "name": "Breads",
-        "description": "Sample text. Click to select the text box. Click again or double click to start editing the text."
+        "description": "Sample text. Click to select the text box. Click again or double click to start editing the text.",
+        "image": "https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/8baae157ffbe56548790d776/yty.jpg",
     },
     {
         "id": 19,
         "name": "Cookies",
-        "description": "Sample text. Click to select the text box. Click again or double click to start editing the text."
+        "description": "Sample text. Click to select the text box. Click again or double click to start editing the text.",
+        "image": "https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/8d481fe712f85027870c837e/rtrtrt.jpg",
     },
     {
         "id": 20,
         "name": "Pastries",
-        "description": "Sample text. Click to select the text box. Click again or double click to start editing the text."
+        "description": "Sample text. Click to select the text box. Click again or double click to start editing the text.",
+        "image": "https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/9765013a9a185d16adf414dd/b1182e8f-cee4-f571-00ff-b553b7f96898.jpg"
     }
 ]
 
@@ -155,8 +173,6 @@ const headLine=[
     }
 ]
 
-
-
 menuBackground=["bgImage1", "bgImage2", "bgImage3", "bgImage4", "bgImage5", "bgImage6"];
 
 breadBackground=["breadImage1","breadImage2","breadImage3","breadImage4","breadImage5","breadImage6","breadImage7","breadImage8"];
@@ -172,7 +188,8 @@ for(let i=0; i<menu.length; i++){
     menuDiv.classList.add("menu");
 
     const image=document.createElement("div");
-    image.classList.add("bgImage", menuBackground[i]);
+    image.style.backgroundImage.url="//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/114eb3a7d170559dbf141d3b/r.jpg";
+    image.classList.add("bgImage");
 
     const name=document.createElement("div");
     name.classList.add("text1", "text");
@@ -248,8 +265,8 @@ for(let i=0; i<sweets.length; i++){
         const liTag=document.createElement("li");
         const listIcon=document.createElement("div");
         listIcon.classList.add("listIcon");
-        liTag.append(listIcon);
-        liTag.innerHTML=sweets[i].list[j];
+        liTag.append(listIcon, sweets[i].list[j]);
+        
         ulTag.append(liTag);
     }
     if(i === 0){
