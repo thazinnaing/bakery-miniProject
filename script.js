@@ -243,39 +243,49 @@ for(let i=0; i< 3; i++){
 
 const headlineContainer=document.getElementsByClassName("headlineContainer")[0];
 
-for(let i=k=0; i<2; i++,k++){
-    console.log("i  "+i);
+const headlineInnerContainer1=document.createElement("div");
+headlineInnerContainer1.classList.add("headlineInnerConatiner");
 
-    const headlineInnerContainer=document.createElement("div");
-    headlineInnerContainer.classList.add("headlineInnerConatiner");
+const headlineInnerContainer2=document.createElement("div");
+headlineInnerContainer2.classList.add("headlineInnerConatiner");
 
-    for(let j=i+k; j<i+k+2; j++){
-        console.log("j  "+j)
-        const headLineDiv=document.createElement("div");
-        headLineDiv.classList.add("headlineDiv");
+const forheadlineDiv=(i)=>{
+    const headlineDiv=document.createElement("div");
+    headlineDiv.classList.add("headlineDiv");
 
-        const title=document.createElement("div");
-        title.classList.add("headTilte", "fotText")
-        const pTag=document.createElement("p");
-        pTag.innerHTML=headLine[i].title;
-        title.append(pTag);
+    const title=document.createElement("div");
+    title.classList.add("headTilte", "fotText")
+    const pTag=document.createElement("p");
+    pTag.innerHTML=headLine[i].title;
+    title.append(pTag);
 
-        const description=document.createElement("div");
-        description.classList.add("headText", "forText")
-        const descriptionPTag=document.createElement("p");
-        descriptionPTag.innerHTML=headLine[i].description;
-        description.append(descriptionPTag);
+    const description=document.createElement("div");
+    description.classList.add("headText", "forText")
+    const descriptionPTag=document.createElement("p");
+    descriptionPTag.innerHTML=headLine[i].description;
+    description.append(descriptionPTag);
 
-        headLineDiv.append(title, description);
-        headlineInnerContainer.append(headLineDiv);
-        
+    headlineDiv.append(title, description);
+    return headlineDiv;
+    
+}
 
-    }
+for(let i=0; i<2; i++){
+    
+    const headlineDiv=forheadlineDiv(i);
+    headlineInnerContainer1.append(headlineDiv);
+    
+}
 
-    console.log("k  "+k)
-    headlineContainer.append(headlineInnerContainer);
+for(let i=2; i<4; i++){
+
+    const headlineDiv=forheadlineDiv(i);
+    headlineInnerContainer2.append(headlineDiv);
 
 }
+headlineContainer.append(headlineInnerContainer1, headlineInnerContainer2);
+
+
 
 
 
