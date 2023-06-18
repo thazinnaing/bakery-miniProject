@@ -1,47 +1,76 @@
+const navigationTags=[
+    {
+        "id": 1,
+        "name": "Home",
+        "url": "",
+
+    },
+    {
+        "id": 2,
+        "name": "Menu",
+        "url": "\menu.html",
+
+    },
+    {
+        "id": 3,
+        "name": "About",
+        "url": "",
+
+    },
+    {
+        "id": 4,
+        "name": "Contact Us",
+        "url": "",
+
+    }
+    
+    
+]   
+
 const menu=[
     {   
-        "id":1,
-        "name":"BAGUETTE",
+        "id": 5,
+        "name": "BAGUETTE",
         "description": "Small-batch sourdough baguette 1.",
         "price": "$41.5",
         "image": "//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/114eb3a7d170559dbf141d3b/r.jpg",
         
     },
     {   
-        "id":2,
-        "name":"FARMING BREAD",
+        "id": 6,
+        "name": "FARMING BREAD",
         "description": "Small-batch sourdough baguette 2.",
         "price": "$21.5",
         "image": "//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/0cd587018da1567ca82ec0a8/rr.jpg",
         
     },
     {   
-        "id":3,
-        "name":"MIXED GRAIN",
+        "id": 7,
+        "name": "MIXED GRAIN",
         "description": "Small-batch sourdough baguette 3.",
         "price": "$11.5",
         "image": "//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/fa992363623553128956b054/hh.jpg",
     
     },
     {   
-        "id":4,
-        "name":"MILK BREAD",
+        "id": 8,
+        "name": "MILK BREAD",
         "description": "Small-batch sourdough baguette 4.",
         "price": "$51.5",
         "image": "//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/1790791acc975a71ba003ca1/hg.jpg",
         
     },
     {   
-        "id":5,
-        "name":"BROWN BREAD",
+        "id": 9,
+        "name": "BROWN BREAD",
         "description": "Small-batch sourdough baguette 5.",
         "price": "$12.5",
         "image": "//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/c05083dfe0235ffaa9a5cfbf/jhjhjh.jpg",
     
     },
     {   
-        "id":6,
-        "name":"CHEESE BREAD",
+        "id": 10,
+        "name": "CHEESE BREAD",
         "description": "Small-batch sourdough baguette 6.",
         "price": "$10.5",
         "image": "//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/c1a914846ece539fab7e5b32/j.jpg",
@@ -51,7 +80,7 @@ const menu=[
 
 const bread=[
     {
-        "id": 7,
+        "id": 11,
         "name": "CROISSANT",
         "description": "some text. Click here to see some bakery logo. And this is some example text.",
         "image": "https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/fggggg.jpg",
@@ -59,49 +88,49 @@ const bread=[
 
     },
     {
-        "id": 8,
+        "id": 12,
         "name": "BROWNIES",
         "description": "some text. Click here to see some bakery logo. And this is some example text.",
         "image": "https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/yyyy.jpg",
 
     },
     {
-        "id": 9,
+        "id": 13,
         "name": "CINNAMON BUN",
         "description": "some text. Click here to see some bakery logo. And this is some example text.",
         "image": "https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/f5f4b03a-6b27-3595-ba4e-7b894cc961a3.jpg",
 
     },
     {
-        "id": 10,
+        "id": 14,
         "name": "TURKISH BAGELS",
         "description": "some text. Click here to see some bakery logo. And this is some example text.",
         "image": "https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/444.jpg",
 
     },
     {
-        "id": 11,
+        "id": 15,
         "name": "DOUGHNUTS",
         "description": "some text. Click here to see some bakery logo. And this is some example text.",
         "image": "https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/c91fa21f-6a02-001e-d59f-2125c9c711bd.jpg",
 
     },
     {
-        "id": 12,
+        "id": 16,
         "name": "TARTS",
         "description": "some text. Click here to see some bakery logo. And this is some example text.",
         "image": "https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/96a8f2c7-47a4-66cb-fec2-68902bf475cf.jpg",
 
     },
     {
-        "id": 13,
+        "id": 17,
         "name": "SHORTBREAD",
         "description": "some text. Click here to see some bakery logo. And this is some example text.",
         "image": "https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/3ec2a0c1-031e-107f-1950-2cfd3f6314ce.jpg",
 
     },
     {
-        "id": 14,
+        "id": 18,
         "name": "COOKIES",
         "description": "some text. Click here to see some bakery logo. And this is some example text.",
         "image": "https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/96a8f2c7-47a4-66cb-fec2-68902bf475cf.jpg",
@@ -113,17 +142,17 @@ const bread=[
 
 const sweets=[
     {   
-        "id": 15,
+        "id": 19,
         "title": "Cookies",
         "list": ["Biscotti", "Chocolate Chip", "Oatmeal Pecan", "Oat Ginger Bar", "Seasonal specials"],
     },
     {   
-        "id": 16,
+        "id": 20,
         "title": "Scones",
         "list": ["Classic butter scone", "Fresh fruit butter milk scones", "Handmade scones"],
     },
     {   
-        "id": 17,
+        "id": 21,
         "title": "Other",
         "list": ["Seasonal galletes", "Tarlets", "Banana Bread", "Cranberry Pecan Granola"],
     }
@@ -131,19 +160,19 @@ const sweets=[
 
 const sampleBread=[
     {
-        "id": 18,
+        "id": 22,
         "name": "Breads",
         "description": "Sample text. Click to select the text box. Click again or double click to start editing the text.",
         "image": "https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/8baae157ffbe56548790d776/yty.jpg",
     },
     {
-        "id": 19,
+        "id": 23,
         "name": "Cookies",
         "description": "Sample text. Click to select the text box. Click again or double click to start editing the text.",
         "image": "https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/8d481fe712f85027870c837e/rtrtrt.jpg",
     },
     {
-        "id": 20,
+        "id": 24,
         "name": "Pastries",
         "description": "Sample text. Click to select the text box. Click again or double click to start editing the text.",
         "image": "https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/9765013a9a185d16adf414dd/b1182e8f-cee4-f571-00ff-b553b7f96898.jpg"
@@ -152,26 +181,69 @@ const sampleBread=[
 
 const headLine=[
     {
-        "id": 21,
+        "id": 25,
         "title": "Headline",
         "description": "Sample text.",
     },
    {
-        "id": 22,
+        "id": 26,
         "title": "Headline",
         "description": "Sample footer text",
    },
    {
-        "id": 23,
+        "id": 27,
         "title": "Headline",
         "description": "Sample footer text",
     },
     {
-        "id": 24,
+        "id": 28,
         "title": "Headline",
         "description": "Sample footer text",
     }
 ]
+
+
+
+const navigationFun = ()=>{
+    const navBar= document.createElement("div");
+    navBar.classList.add("navigationBar");
+
+
+    const leftMostBar= document.createElement("div");
+    leftMostBar.classList.add("leftBar");
+    const pTag= document.createElement("p");
+    const strongTag= document.createElement("strong");
+    strongTag.innerHTML="BAKERY";
+    pTag.append(strongTag);
+    leftMostBar.append(pTag);
+
+    const middleBar=document.createElement("div");
+    middleBar.classList.add("middleBar");
+    for(let i=0; i<navigationTags.length; i++){
+        const linkTag=document.createElement("div");
+        linkTag.classList.add("linkTag");
+        const anchor=document.createElement("a");
+        anchor.setAttribute("href", navigationTags[i].url);
+        const anchorValue= document.createTextNode(navigationTags[i].name);
+        anchor.append(anchorValue);
+        linkTag.append(anchor);
+        middleBar.append(linkTag);
+    }
+
+    const rightMostBar=document.createElement("div");
+    rightMostBar.classList.add("rightmostBar");
+    const icon=document.createElement("i");
+    icon.classList.add("fa-solid", "fa-bars");
+    rightMostBar.append(icon);
+
+    navBar.append(leftMostBar, middleBar, rightMostBar);
+    return navBar;
+}
+
+const navigationContainer= document.getElementsByClassName("navigationContainer")[0];
+const navigationBar=navigationFun();
+navigationContainer.append(navigationBar);
+
 
 menuBackground=["bgImage1", "bgImage2", "bgImage3", "bgImage4", "bgImage5", "bgImage6"];
 

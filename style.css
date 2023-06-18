@@ -12,14 +12,14 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    
+    background-color: rgb(136, 123, 136); 
 }
 .navigationBar{
     display: flex;
     justify-content: space-between;
     padding-left: 30px;
     padding-right: 30px;
-    height: 10%;
+    height: 80px;
     background-color: white;
     }
 .leftBar{
@@ -43,14 +43,18 @@ body{
     align-items: center;
     font-size: 25px;
 }
-.bakery a{
+.linkTag a{
     font-weight: bold;
     font-size: 17px;
     text-decoration: none;
     color: black;
 }
-.bakery a:hover{
+.linkTag a:hover{
     color: red;
+    cursor: pointer;
+}
+.linkTag a:active{
+    color: yellow;
 }
 .mainDiv{
     width: 100%;
@@ -133,6 +137,7 @@ div p{
 }
 
 .mainButton:hover{
+    cursor: pointer;
     animation-name: bordercolor;
     animation-duration: 1.5s;
     animation-timing-function: ease-in;
@@ -189,6 +194,7 @@ div p{
     background-size: 100% 100%;
 }
 .bgImage:hover{
+    cursor:pointer;
     opacity: 0.9;
     animation-name: hoverEffect;
     animation-duration: 0.7s;
@@ -275,6 +281,7 @@ div p{
     border-radius: 10px;
 }
 .bread:hover{
+    cursor: pointer;
     opacity: 0.9;
     animation-name: hoverEffect;
     animation-duration: 0.7s;
@@ -323,6 +330,7 @@ div p{
     color: rgb(80, 30, 80);
 }
 .more a:hover{
+    cursor: pointer;
     color: red;
 }
 
@@ -496,6 +504,7 @@ li{
     justify-content: space-between;
 }
 .sampleBread:hover{
+    cursor: pointer;
     opacity: 0.9;
     animation-name: hoverEffect;
     animation-duration: 0.7s;
@@ -606,6 +615,7 @@ li{
     background-color: rgb(167,159,148);
 }
 .submit:hover{
+    cursor: pointer;
     background-color: rgb(42, 32, 32);
 }
 .iconDiv{
@@ -705,9 +715,6 @@ li{
 .lastIcon{
     color: white;
 }
-
-
-
 
 
 
