@@ -12,7 +12,6 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgb(136, 123, 136); 
 }
 .navigationBar{
     display: flex;
@@ -21,7 +20,8 @@ body{
     padding-right: 30px;
     height: 80px;
     background-color: white;
-    }
+}
+    
 .leftBar{
     display: flex;
     justify-content: center;
@@ -169,7 +169,7 @@ div p{
     height: 40px;
 }
 .menuTitle p{
-    font-size: 40px;
+    font-size: 30px;
 }
 .menuText p{
     font-style: italic;
@@ -192,37 +192,16 @@ div p{
     border-radius: 50%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    transition: 0.2s;
 }
 .bgImage:hover{
     cursor:pointer;
     opacity: 0.9;
-    animation-name: hoverEffect;
-    animation-duration: 0.7s;
-    animation-iteration-count: 2;
-    animation-direction: alternate;
+    transform: translate(2px, -2px);
+
+    
 }
-@keyframes hoverEffect{
-    0%{transform: scale(1);}
-    100%{transform: scale(1.05);}
-}
-/* .bgImage1{
-    background-image: url("//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/114eb3a7d170559dbf141d3b/r.jpg");
-}
-.bgImage2{
-    background-image: url("//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/0cd587018da1567ca82ec0a8/rr.jpg");
-}
-.bgImage3{
-    background-image: url("//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/fa992363623553128956b054/hh.jpg");
-}
-.bgImage4{
-    background-image: url("//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/1790791acc975a71ba003ca1/hg.jpg");
-}
-.bgImage5{
-    background-image: url("//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/c05083dfe0235ffaa9a5cfbf/jhjhjh.jpg");
-}
-.bgImage6{
-    background-image: url("//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/c1a914846ece539fab7e5b32/j.jpg");
-} */
+
 .text1{
     height: 30px;
 }
@@ -279,14 +258,13 @@ div p{
     justify-content: space-evenly;
     align-items: center;
     border-radius: 10px;
+    transition: 0.2s;
 }
 .bread:hover{
     cursor: pointer;
     opacity: 0.9;
-    animation-name: hoverEffect;
-    animation-duration: 0.7s;
-    animation-iteration-count: 2;
-    animation-direction: alternate;
+    transform: scale(1.05);
+
 }
 .breadImage{
     width: 150px;
@@ -294,30 +272,6 @@ div p{
     border-radius: 50%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-}
-.breadImage1{
-    background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/fggggg.jpg");
-}
-.breadImage2{
-    background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/yyyy.jpg");
-}
-.breadImage3{
-    background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/f5f4b03a-6b27-3595-ba4e-7b894cc961a3.jpg");
-}
-.breadImage4{
-    background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/444.jpg");
-}
-.breadImage5{
-    background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/c91fa21f-6a02-001e-d59f-2125c9c711bd.jpg");
-}
-.breadImage6{
-    background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/96a8f2c7-47a4-66cb-fec2-68902bf475cf.jpg");
-}
-.breadImage7{
-    background-image:url("https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/3ec2a0c1-031e-107f-1950-2cfd3f6314ce.jpg");
-}
-.breadImage8{
-    background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/3284316/images/96a8f2c7-47a4-66cb-fec2-68902bf475cf.jpg");
 }
 .breadName{
     height: 20px;
@@ -502,14 +456,13 @@ li{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: 0.2s;
 }
 .sampleBread:hover{
     cursor: pointer;
     opacity: 0.9;
-    animation-name: hoverEffect;
-    animation-duration: 0.7s;
-    animation-iteration-count: 2;
-    animation-direction: alternate;
+    transform: scale(1.05);
+    
 }
 .sampleImage{
     width: 100%;
@@ -536,16 +489,6 @@ li{
     font-size: 15px;
     text-align: left;
     font-style: italic;
-}
-
-.sampleImage1{
-    background-image: url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/8baae157ffbe56548790d776/yty.jpg");
-}
-.sampleImage2{
-    background-image: url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/8d481fe712f85027870c837e/rtrtrt.jpg");
-}
-.sampleImage3{
-    background-image: url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/9765013a9a185d16adf414dd/b1182e8f-cee4-f571-00ff-b553b7f96898.jpg");
 }
 .signupAddressContainer{
     width: 100%;
