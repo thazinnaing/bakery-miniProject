@@ -1,0 +1,58 @@
+.innerContainer{
+    display: flex;
+    position: relative;
+}
+.detailsDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+    padding-top: 20px;
+}
+/* .forText p{
+    white-space: pre;
+} */
+.name{
+    height: 40px;
+}
+.name p{
+    font-size:40px;
+}
+.backgroundImage{
+    width: 90%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.description p{
+    font-size: 15px;
+}
+
+@media screen and (min-width: 840px){
+    
+    .backgroundImage{
+        height: 500px;
+        width: 100%;
+    }
+    
+}
+@media screen and (min-width: 1024px){
+    .detailsDiv{
+        width: 70%;
+    }
+    .gifyDiv{
+        width: 24%;
+        height: 300px;
+        background-image: url("https://media.tenor.com/4YqnyOhpC6QAAAAC/pancake-day-shrove-tuesday.gif");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        right: 30px;
+        top: 180px;
+    }
+}
+@media screen and (min-width: 1330px){
+    .gifyDiv{
+        top: 160px;
+    }
+}

@@ -1,6 +1,21 @@
-.navigationBar{
-    background-color: lightgrey;
+
+.menuDiv{
+    padding-top: 25px;
 }
-.orderButton{
-    
+.buttonDiv{
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 20px;
+}
+.addMenuButton{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid rgb(136, 123, 136);
+}
+.addMenuButton:hover{
+    background-color: yellow;
+    color: rgb(47, 44, 47);
 }

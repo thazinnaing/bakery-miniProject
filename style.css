@@ -21,7 +21,9 @@ body{
     height: 80px;
     background-color: white;
 }
-    
+.navigationBar{
+    background-color: lightgrey;
+}
 .leftBar{
     display: flex;
     justify-content: center;

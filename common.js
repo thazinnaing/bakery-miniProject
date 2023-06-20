@@ -1,30 +1,30 @@
 
-const navigationTags=[
-    {
-        "id": 1,
-        "name": "Home",
-        "url": "home.html",
+// const navigationTags=[
+//     {
+//         "id": 1,
+//         "name": "Home",
+//         "url": "home.html",
 
-    },
-    {
-        "id": 2,
-        "name": "Menu",
-        "url": "menu.html",
+//     },
+//     {
+//         "id": 2,
+//         "name": "Menu",
+//         "url": "menu.html",
 
-    },
-    {
-        "id": 3,
-        "name": "About",
-        "url": "",
+//     },
+//     {
+//         "id": 3,
+//         "name": "About",
+//         "url": "",
 
-    },
-    {
-        "id": 4,
-        "name": "Contact Us",
-        "url": "",
+//     },
+//     {
+//         "id": 4,
+//         "name": "Contact Us",
+//         "url": "",
 
-    }
-]  
+//     }
+// ]  
 
 const menuArray=[
     {   
@@ -77,53 +77,54 @@ const menuArray=[
     }
 ]
 
-const navigationFun = ()=>{
-    const navBar= document.createElement("div");
-    navBar.classList.add("navigationBar");
+// const navigationFun = ()=>{
+//     const navBar= document.createElement("div");
+//     navBar.classList.add("navigationBar");
 
-    const leftMostBar= document.createElement("div");
-    leftMostBar.classList.add("leftBar");
-    const pTag= document.createElement("p");
-    const strongTag= document.createElement("strong");
-    strongTag.innerHTML="BAKERY";
-    pTag.append(strongTag);
-    leftMostBar.append(pTag);
+//     const leftMostBar= document.createElement("div");
+//     leftMostBar.classList.add("leftBar");
+//     const pTag= document.createElement("p");
+//     const strongTag= document.createElement("strong");
+//     strongTag.innerHTML="BAKERY";
+//     pTag.append(strongTag);
+//     leftMostBar.append(pTag);
 
-    const middleBar=document.createElement("div");
-    middleBar.classList.add("middleBar");
-    for(let i=0; i<navigationTags.length; i++){
-        const linkTag=document.createElement("div");
-        linkTag.classList.add("linkTag");
-        const anchor=document.createElement("a");
-        anchor.setAttribute("href", navigationTags[i].url);
-        const anchorValue= document.createTextNode(navigationTags[i].name);
-        anchor.append(anchorValue);
-        linkTag.append(anchor);
-        middleBar.append(linkTag);
-    }
+//     const middleBar=document.createElement("div");
+//     middleBar.classList.add("middleBar");
+//     for(let i=0; i<navigationTags.length; i++){
+//         const linkTag=document.createElement("div");
+//         linkTag.classList.add("linkTag");
+//         const anchor=document.createElement("a");
+//         anchor.setAttribute("href", navigationTags[i].url);
+//         const anchorValue= document.createTextNode(navigationTags[i].name);
+//         anchor.append(anchorValue);
+//         linkTag.append(anchor);
+//         middleBar.append(linkTag);
+//     }
 
-    const rightMostBar=document.createElement("div");
-    rightMostBar.classList.add("rightmostBar");
-    const icon=document.createElement("i");
-    icon.classList.add("fa-solid", "fa-bars");
-    rightMostBar.append(icon);
+//     const rightMostBar=document.createElement("div");
+//     rightMostBar.classList.add("rightmostBar");
+//     const icon=document.createElement("i");
+//     icon.classList.add("fa-solid", "fa-bars");
+//     rightMostBar.append(icon);
 
-    navBar.append(leftMostBar, middleBar, rightMostBar);
-    return navBar;
-}
+//     navBar.append(leftMostBar, middleBar, rightMostBar);
+//     return navBar;
+// }
 
-const navigationContainer= document.getElementsByClassName("navigationContainer")[0];
-const navigationBar=navigationFun();
-navigationContainer.append(navigationBar);
+// const navigationContainer= document.getElementsByClassName("navigationContainer")[0];
+// const navigationBar=navigationFun();
+// navigationContainer.append(navigationBar);
 
 const menuContent=document.getElementsByClassName("menuContent")[0];
 
-const createMenuDiv=(index)=>{
-    const menu=document.createElement("div");
+const createMenuDiv=(tempArray)=>{
+    for(let i=0; i<tempArray.length; i++){
+        const menu=document.createElement("div");
         menu.classList.add("menu");
     
         const image=document.createElement("div");
-        image.style.backgroundImage=`url("${menuArray[index].image}")`;
+        image.style.backgroundImage=`url("${tempArray[i].image}")`;
         image.classList.add("bgImage");
         // image.setAttribute("title", "Click for more menu");
     
@@ -131,35 +132,39 @@ const createMenuDiv=(index)=>{
         name.classList.add("text1", "text");
         const pTag=document.createElement("p");
         const strongTag=document.createElement("strong");
-        strongTag.innerHTML=menuArray[index].name;
+        strongTag.innerHTML=tempArray[i].name;
         pTag.append(strongTag);
         name.append(pTag);
     
         const description=document.createElement("div");
         description.classList.add("text2", "text");
         const descriptionPTag=document.createElement("p");
-        descriptionPTag.innerHTML=menuArray[index].description;
+        descriptionPTag.innerHTML=tempArray[i].description;
         description.append(descriptionPTag);
     
         const price=document.createElement("div");
         price.classList.add("text", "price");
         const pricePTag=document.createElement("p");
-        pricePTag.innerHTML=menuArray[index].price;
+        pricePTag.innerHTML=tempArray[i].price;
         price.append(pricePTag);
     
         menu.append(image, name, description, price);
         menuContent.append(menu);
 
+    }
+
 }
     
 const arrFun=(limit, array)=>{
+    const tempArray=[];
     for(let i=0; i< array.length; i++){
         if((limit)===i){
             break;
         }
         else{
-            createMenuDiv(i);
+            tempArray[i]=array[i];
         }
+        createMenuDiv(tempArray);
         
     }
 }
@@ -171,5 +176,8 @@ if(checkClass){
 else{
     arrFun(menuArray.length/2, menuArray);
 }
+const container=document.getElementsByClassName("container");
+const test=container.classList.contains("menuContent");
+console.log(test);
 
 
