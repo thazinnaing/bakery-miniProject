@@ -3,25 +3,25 @@ const navigationTags=[
     {
         "id": 1,
         "name": "Home",
-        "url": "home.html",
+        "url": "../pages/home.html",
 
     },
     {
         "id": 2,
         "name": "Menu",
-        "url": "menu.html",
+        "url": "../pages/menu.html",
 
     },
     {
         "id": 3,
         "name": "About",
-        "url": "joke.html",
+        "url": "../pages/joke.html",
 
     },
     {
         "id": 4,
         "name": "Contact Us",
-        "url": "joke.html",
+        "url": "../pages/joke.html",
 
     }
 ] 
