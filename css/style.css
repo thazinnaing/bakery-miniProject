@@ -1038,5 +1038,13 @@ li{
         height: 350px;
     }
 }
+@media screen and (min-width: 1510px){
+    .menuContent{
+        gap: 60px;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}
+
 
 

@@ -1,0 +1,75 @@
+[
+    {   
+        "id": "5",
+        "name": "BAGUETTE",
+        "description": "Small-batch sourdough baguette 1.",
+        "price": "$41.5",
+        "image": "//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/114eb3a7d170559dbf141d3b/r.jpg",
+        "description1": "Baguette dough is a very wet (high hydration) dough.Because of this, we do not knead the dough (as we do with many other bread doughs).addressInstead, the dough slowly ferments with a series of brief stretch and folds.The stretch and fold technique serves three purposes: re-distributes heat within the dough, puts yeast back in contact with its food source, and layers the gluten to build the gluten structure within the dough.",
+        "description2":"All-purpose flour can technically be used for baguettes, creating a soft, airy crumb.<br> However, for a traditional chewy and crusty baguette, use bread flour. Bread flour has a higher protein content than all-purpose flour which adds chewiness. The French typically use flour with a protein content similar to bread flour (or even a little higher).Bread flour has a higher protein content than all-purpose flour which adds chewiness. The French typically use flour with a protein content similar to bread flour (or even a little higher).",
+        "image1": "https://media.istockphoto.com/id/1225614743/photo/loaf-of-bread-and-butter.jpg?s=612x612&w=0&k=20&c=wVjvdidzOv6SegQ5dmdEagfog6WWPWb6QJJ12Difo-k=",
+        "image2": "https://media.istockphoto.com/id/621696364/photo/french-baguettes-in-wicker-basket-in-bakery.jpg?s=612x612&w=0&k=20&c=FnSNClYZXjSXFm5MMTZxbpAqnW2dIgVKJyoYLGrRD-8="
+        
+    },
+    {   
+        "id": "6",
+        "name": "FARMING BREAD",
+        "description": "Small-batch sourdough baguette 2.",
+        "price": "$21.5",
+        "image": "//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/0cd587018da1567ca82ec0a8/rr.jpg",
+        "description1": "Farmer's bread can refer to many different breads and the definition seems to be quite fluid. It can be made with varying proportions of flour and various types of flour. It can be sweetened with malt syrup, molasses, honey, or treacle. Caraway seed is a common addition too",
+        "description2": "This kind of bread would be made with a sourdough starter. Other recipes suggest using a yeast derived preferment and others even add some vinegar for extra acidity. I decided to stick to cold bulk fermentation which gets us as close to sourdough as we can get with using commercial yeast.",
+        "image1": "https://images.services.kitchenstories.io/R8yxAQVhbIrqS8QoLPXCfTc7Q9s=/1080x0/filters:quality(85)/images.kitchenstories.io/communityImages/796a9d8f331a59d37c091acea4d693d9_77bf569a-115b-47b3-ae39-ce7226270553.jpg",
+        "image2": "https://images.services.kitchenstories.io/jiEE_2k_edzBRJ3ktFQN4FnNHrI=/1080x0/filters:quality(85)/images.kitchenstories.io/communityImages/7e96c81ace22ebb72dffb9e526eae4a3_9d2ee0a6-ecb2-4d28-bfb3-fd1f64fe123b.jpg"
+        
+    },
+    {   
+        "id": "7",
+        "name": "MIXED GRAIN",
+        "description": "Small-batch sourdough baguette 3.",
+        "price": "$11.5",
+        "image": "//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/fa992363623553128956b054/hh.jpg",
+        "description1": "Our multigrain bread with our favorite homemade 9-grain blend. We have all the detailed instructions you need for foolproof results.If you'd rather not make your own multigrain cereal mix, you can buy one ready-made.", 
+        "description2": "This homemade bread is as indulgent as it is nutritious. It's ready for sandwiches, buttery morning toast, and grilled cheese. It really is the perfect everyday sandwich bread! That said, we usually demolish a whole loaf when it comes out of the oven, because who can resist fresh warm bread with butter!",      
+        "image1": "https://www.shutterstock.com/image-photo/homemade-diy-organic-healthy-bread-260nw-1278914626.jpg",
+        "image2": "https://i.insider.com/597262c39d0918347978c72f?width=1000&format=jpeg&auto=webp"
+    
+    },
+    {   
+        "id": "8",
+        "name": "MILK BREAD",
+        "description": "Small-batch sourdough baguette 4.",
+        "price": "$51.5",
+        "image": "//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/1790791acc975a71ba003ca1/hg.jpg",
+        "description1": "Milk bread is an incredibly soft, fluffy, light white bread made with milk that's perfect for toast, sandwiches, or simple enjoying by itself. It goes by many names and is also known as Japanese milk bread, shokupan, Korean milk bread (우유식빵), Chinese milk bread, or Hokkaido milk bread.",
+        "description2": "If you're looking for the best homemade milk bread with the fluffiest, softest crumb, look no further! This recipe is from my mom, a retired pastry chef, that's been adapted for the home baker. You'll end up with professional bakery results from this simple, easy recipe for milk bread!",
+        "image1": "https://jessicainthekitchen.com/wp-content/uploads/2022/08/Vegan-Hokaido-Bread-29.jpg",
+        "image2": "https://media.istockphoto.com/id/624678362/photo/jug-of-milk-with-freshly-baked-bread-and-wheat-ears.jpg?s=612x612&w=0&k=20&c=LC2hZ39AWeTD-1dzqU-S5aLxbYBnrZXKRlrMopk_Uao="
+        
+        
+    },
+    {   
+        "id": "9",
+        "name": "BROWN BREAD",
+        "description": "Small-batch sourdough baguette 5.",
+        "price": "$12.5",
+        "image": "//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/c05083dfe0235ffaa9a5cfbf/jhjhjh.jpg",
+        "description1": "Brown Bread is one of the most eaten variant of bread all over the world. It is usually made with more portions of whole wheat flour mixed with all-purpose flour.To give a deeper shade of brown, sometimes coloring ingredients like caramel or molasses are also added in the commercially prepared brown bread.",
+        "description2": "This Brown Bread recipe, results in a soft, light and great textured bread. I have used a combination of whole wheat flour and all-purpose flour in a ratio of 1:3 for this Brown Bread recipe.",
+        "image1": "https://www.shutterstock.com/image-photo/freshly-baked-traditional-bread-on-260nw-1920826169.jpg",
+        "image2": "https://images.squarespace-cdn.com/content/v1/5b55b377b27e39707a59aed1/1596564458219-X8E842HIZWRE0IQ47WVC/Sourdough+Bread+Food+Photography%2C+Bangalore+India.jpg?format=1500w"
+    
+    },
+    {   
+        "id": "10",
+        "name": "CHEESE BREAD",
+        "description": "Small-batch sourdough baguette 6.",
+        "price": "$10.5",
+        "image": "//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/c1a914846ece539fab7e5b32/j.jpg",
+        "description1": "It's surprisingly easy to make homemade cheese bread. This soft buttery yeasted bread is twisted up with cheddar cheese, but you can use any cheese variety you love. Bake the bread in a loaf pan, then slice it to reveal the 2 cups of swirled cheese inside.",
+        "description2": " This cheese bread is homemade bread swirled with real cheese. It's a simple yeasted dough that I adapted from my sweeter homemade cinnamon swirl bread and my basic sandwich bread. Each slice is extra soft with a chewy crust and ribbons of melted cheese throughout. For extra flavor, brush the top of the unbaked bread with garlic herb butter. The cheese on top crisps up, while the garlic butter infuses down into the bread.",
+        "image1": "https://sallysbakingaddiction.com/wp-content/uploads/2019/08/cheese-bread.jpg",
+        "image2": "https://therecipecritic.com/wp-content/uploads/2022/05/brazilliancheesebread-3.jpg"
+    
+    }
+]
